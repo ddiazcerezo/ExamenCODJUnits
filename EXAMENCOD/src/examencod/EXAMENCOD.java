@@ -20,15 +20,20 @@ System.out.print(x + " ");
 }         	 
 	}
 public static boolean metodoMio(int variable){
-int j = 2;
-boolean aux=true;
-while ((aux) && (j!=variable)){
-if (variable % j == 0)
-aux = false;
-j++;
-}
-return aux;
+return  HOLAAA(variable);
   } 	 
+
+    private static boolean HOLAAA(int variable) {
+        final int NUMERO = 2;
+        int j = NUMERO;
+        boolean aux=true;
+        while ((aux) && (j!=variable)){
+            if (variable % j == 0)
+                aux = false;
+            j++;
+        }
+        return aux;
+    }
     
 }
 
