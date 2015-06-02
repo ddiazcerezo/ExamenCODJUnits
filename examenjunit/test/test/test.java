@@ -46,7 +46,7 @@ public class test {
          int num1 = 12;
          int num2 =18;
          Calcular calculo = new Calcular();
-         int expResult = 10;
+         int expResult = 6;
          int result = calculo.obtenerMCD(num1,num2);
          assertEquals(expResult,result);
          
