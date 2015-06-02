@@ -5,6 +5,7 @@
  */
 package test;
 
+import examenjunit.Calcular;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -36,10 +37,22 @@ public class test {
     @After
     public void tearDown() {
     }
+    
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
-}
+     @Test
+     public void pruebaMCD() {
+         System.out.print("Prueba");
+   
+         int num1 = 12;
+         int num2 =18;
+         Calcular calculo = new Calcular();
+         int expResult = 10;
+         int result = calculo.obtenerMCD(num1,num2);
+         assertEquals(expResult,result);
+         
+     
+       
+        }
+     
+     }
+
