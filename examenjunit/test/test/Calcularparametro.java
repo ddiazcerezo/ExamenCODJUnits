@@ -8,10 +8,10 @@ package test;
 import examenjunit.Calcular;
 import java.util.Arrays;
 import java.util.Collection;
-import org.junit.After;
-import org.junit.AfterClass;
+
+
 import org.junit.Before;
-import org.junit.BeforeClass;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.runners.Parameterized;
@@ -56,6 +56,7 @@ public class Calcularparametro {
      */
     @Test
     public void testObtenerMCD() {
+         
         System.out.println("obtenerMCD" + " primer operando "+num1 + " segundo operando "+num2 + " resultado "+expResult);
         int result = instance.obtenerMCD(num1, num2);
         assertEquals(expResult, result,0);
